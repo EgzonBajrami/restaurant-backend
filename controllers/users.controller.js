@@ -13,7 +13,7 @@ module.exports = {
 
         const result = await userModel.create({password:hashedPassword,firstName:params.firstName,
             lastName:params.lastName,
-            age:params.age,email:params.email,role:'ADMIN'});
+            age:params.age,email:params.email,role:'USER'});
         console.log(result);
         return result._id;
     }
